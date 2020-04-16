@@ -5,7 +5,10 @@
   <div class="row">
     <div class="col-sm-4">
       {% block info %}
-        <img src="https://placekitten.com/420/320" alt="" class="img-fluid">
+       <div class="members-photo text-center">
+         <img src="img/members/{{members.slug}}-color.jpg" alt="{{members.name}}" class="img-fluid">
+         <img src="img/members/{{members.slug}}-bw.jpg" alt="{{members.name}}" class="img-fluid">
+      </div>
       {% endblock %}
     </div>
     <div class="col-sm-8">
