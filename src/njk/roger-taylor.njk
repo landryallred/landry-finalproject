@@ -5,32 +5,3 @@
 {% block page_title %} {{ members.name }} {% endblock %}
 
 {% block description %}Page for {{ members.name }}.{% endblock %}
-
-{% block story %}
-<h1>{{ members.name }}</h1>
-<div class="container">
-  <div class="row">
-    <div class="col bg-dark text-light">
-      <h2> Bio </h2>
-        <dl class="bio">
-          <dt> Instruments: </dt>
-          <dd> {{members.instruments}} </dd>
-          <dt> Tenure: </dt>
-          <dd> {{ members.tenure }} </dd>
-          <dt> Birthplace: </dd>
-          <dd> {{ members.birthplace }} </dd>
-          <dt> Birthdate: </dt>
-          <dd> {{ members.birthplace }} </dd>
-        </dl>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col bg-secondary">
-      <h2> Narrative </h2>
-        <article> {{ members.text | safe }} </article>
-    </div>
-  </div>
-</div>
-{% endblock %}

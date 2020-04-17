@@ -1,7 +1,5 @@
 {% extends '_layouts/base.njk' %}
 
-{% set tourdates = tour.tourdates[0] %}
-
 {% block page_title %} Tour {% endblock %}
 
 {% block description %}Page for Queen's 2020 Tour.{% endblock %}
@@ -21,6 +19,7 @@
         <th>Venue</th>
       </tr>
     </thead>
+    {% for tourdates in tour.tourdates %}
     <tbody>
       <tr>
         <td>{{tourdates.date}}</td>
@@ -28,6 +27,7 @@
         <td>{{tourdates.venue}}</td>
       </tr>
     </tbody>
+    {% endfor %}
   </table>
 </div>
 

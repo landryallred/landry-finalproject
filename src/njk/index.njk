@@ -17,24 +17,26 @@
     </div>
   </div>
 </div>
+
 <div class="container-fluid bg-dark text-light">
-  <h1> Members </h1>
+<h1> Members </h1>
   <div class="row">
-        {% for members in queen.members %}
-        <div class="members col-sm-6 col-md-3" align="center">
-          <div class="circular-portrait">
-            <img class="members-img img-fluid" src="img/members/{{ members.image }}" alt="{{ members.name }}">
-              <div class="overlay">
+    {% for members in queen.members %}
+    <div class="members col-sm-6 col-md-3" align="center">
+        <div class="circular-portrait">
+        <img class="members-img img-fluid" src="img/members/{{ members.imagebw }}" alt="{{ members.name }}">
+            <div class="overlay">
                 <div class="text-centered"> <a href="{{ members.slug }}.html" {{ members.url }} class="text-light">
-                {{ members.name }} </a>
+                  {{ members.name }} </a>
                 </div>
-              </div>
-          </div>
+            </div>
         </div>
-        {% endfor %}
+    </div>
+  {% endfor %}
   </div>
 </div>
-  <div class="container-fluid bg-secondary text-light">
+
+ <div class="container-fluid bg-secondary text-light">
     <h1> Music </h1>
     <div class="row">
       {% for discography in queen.discography %}
