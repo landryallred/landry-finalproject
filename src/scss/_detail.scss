@@ -1,5 +1,9 @@
-.col-members {
+.members-photo {
   padding: 20px;
+}
+
+.col-bio {
+  padding: 15px;
 }
 
 .col-narrative {
@@ -10,3 +14,33 @@ h1 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.card { 
+  width: 100px; 
+  height: 300px; 
+  perspective: 1000px; 
+  background-color: transparent;
+  border: 1px solid gray;
+  display: inline-flex;
+  padding: 10px;
+} 
+.card-inner { 
+  position: relative; 
+  text-align: center; 
+  transition: transform 0.6s; 
+  transform-style: preserve-3d; 
+} 
+.card:hover .card-inner { 
+  transform: rotateY(180deg); 
+} 
+.card-front, .card-back { 
+  position: absolute; 
+  backface-visibility: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.card-back { 
+  transform: rotateY(180deg); 
+} 

@@ -5,13 +5,48 @@
 <h1>{{ members.name }}</h1>
   <div class="row">
     <div class="col-sm-4">
-       <div class="members-photo text-center">
-         <img src="img/members/{{members.slug}}-color.jpg" alt="{{members.name}}" class="img-fluid">
-        </div>
+      <div class="members-photo text-center">
+        <img src="img/members/{{members.slug}}-color.jpg" alt="{{members.name}}" class="img-fluid">
+      </div>
     </div>
-    <div class="col col-members bg-dark text-light">
-      <h2> Bio </h2>
-        <dl class="bio">
+    <div class="col-bio col-sm-4 col-md-6 bg-dark text-light">
+      <div class="card-group">
+        <div class="card justify-content-center">
+          <div class="card-inner"> 
+            <div class="card-front">Instruments
+            </div> 
+            <div class="card-back"> {{ members.instruments}}
+            </div> 
+          </div>
+        </div>
+        <div class="card justify-content-center">
+          <div class="card-inner"> 
+            <div class="card-front">Tenure
+            </div> 
+            <div class="card-back"> {{ members.tenure }}
+            </div> 
+          </div>
+        </div>
+        <div class="card justify-content-center">
+          <div class="card-inner"> 
+            <div class="card-front">Birthplace
+            </div> 
+            <div class="card-back"> {{ members.birthplace}}
+            </div> 
+          </div>
+        </div>
+        <div class="card justify-content-center">
+          <div class="card-inner"> 
+            <div class="card-front">Birthdate
+            </div> 
+            <div class="card-back"> {{ members.birthdate}}
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+        {# <dl class="bio">
           <dt> Instruments: </dt>
           <dd> {{members.instruments}} </dd>
           <dt> Tenure: </dt>
@@ -20,9 +55,12 @@
           <dd> {{ members.birthplace }} </dd>
           <dt> Birthdate: </dt>
           <dd> {{ members.birthdate }} </dd>
-        </dl>
+        </dl> #}
+
+
     </div>
   </div>
+</div>
   <div class="row">
     <div class="col col-narrative bg-secondary">
       <h2> Narrative </h2>
