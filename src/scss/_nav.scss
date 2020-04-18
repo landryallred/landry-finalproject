@@ -4,3 +4,12 @@
   width: 100px;
   overflow: hidden;
 }
+
+.navbar {
+  .navbar-dark {
+    background: transparent !important;
+  }
+  .navbar-dark.scrolled {
+    background: black !important;
+  }
+}

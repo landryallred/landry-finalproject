@@ -4,16 +4,16 @@
 <div class="container">
 <h1>{{ members.name }}</h1>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 col-md-6">
       <div class="members-photo text-center">
-        <img src="img/members/{{members.slug}}-color.jpg" alt="{{members.name}}" class="img-fluid">
+        <img src="img/members/{{members.slug}}-color.jpg" alt="{{members.name}}" class="img-fluid rounded">
       </div>
     </div>
-    <div class="col-bio col-sm-4 col-md-6 bg-dark text-light">
-      <div class="card-group">
+    <div class="col-bio col-sm-4 col-md-6">
+      <div class="card-deck text-light">
         <div class="card justify-content-center">
           <div class="card-inner"> 
-            <div class="card-front">Instruments
+            <div class="card-front w-100 vertical-text">Instruments
             </div> 
             <div class="card-back"> {{ members.instruments}}
             </div> 
@@ -21,7 +21,7 @@
         </div>
         <div class="card justify-content-center">
           <div class="card-inner"> 
-            <div class="card-front">Tenure
+            <div class="card-front w-100 vertical-text">Tenure
             </div> 
             <div class="card-back"> {{ members.tenure }}
             </div> 
@@ -29,7 +29,7 @@
         </div>
         <div class="card justify-content-center">
           <div class="card-inner"> 
-            <div class="card-front">Birthplace
+            <div class="card-front w-100 vertical-text">Birthplace
             </div> 
             <div class="card-back"> {{ members.birthplace}}
             </div> 
@@ -37,7 +37,7 @@
         </div>
         <div class="card justify-content-center">
           <div class="card-inner"> 
-            <div class="card-front">Birthdate
+            <div class="card-front w-100 vertical-text">Birthdate
             </div> 
             <div class="card-back"> {{ members.birthdate}}
             </div> 
@@ -45,26 +45,11 @@
         </div>
       </div>
     </div>
-
-        {# <dl class="bio">
-          <dt> Instruments: </dt>
-          <dd> {{members.instruments}} </dd>
-          <dt> Tenure: </dt>
-          <dd> {{ members.tenure }} </dd>
-          <dt> Birthplace: </dd>
-          <dd> {{ members.birthplace }} </dd>
-          <dt> Birthdate: </dt>
-          <dd> {{ members.birthdate }} </dd>
-        </dl> #}
-
-
-    </div>
   </div>
-</div>
   <div class="row">
-    <div class="col col-narrative bg-secondary">
-      <h2> Narrative </h2>
-        <article> {{ members.text | safe }} </article>
+    <div class="col-narrative text-dark">
+      <h2> About {{ members.name }} </h2>
+      <article> {{ members.text | safe }} </article>
     </div>
   </div>
 </div>

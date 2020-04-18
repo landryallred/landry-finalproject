@@ -1,13 +1,23 @@
 .members-photo {
-  padding: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  img {
+    border-radius: 20px;
+  }
 }
 
 .col-bio {
-  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .col-narrative {
   padding: 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
 h1 {
@@ -15,14 +25,19 @@ h1 {
   padding-bottom: 10px;
 }
 
+.vertical-text{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
 .card { 
-  width: 100px; 
-  height: 300px; 
+  height: 500px;
+  width: 100px;
   perspective: 1000px; 
-  background-color: transparent;
-  border: 1px solid gray;
+  background-color: black;
+  border-radius: 20px;
   display: inline-flex;
-  padding: 10px;
+
 } 
 .card-inner { 
   position: relative; 
@@ -41,6 +56,7 @@ h1 {
   justify-content: center;
   align-items: center;
 } 
+
 .card-back { 
   transform: rotateY(180deg); 
 } 
