@@ -2,7 +2,7 @@
 
 {% block page_title %}Home{% endblock %}
 
-{% block page_description %}Home page for Queen website.{% endblock %}
+{% block page_description %}Home page for Queen website.{% endblock %} 
 
 {% block content %}
 <div class="container">
@@ -18,7 +18,7 @@
   </div>
 </div>
 
-<div class="container-fluid bg-dark text-light">
+<div class="container-fluid members-container text-light">
 <h1> Members </h1>
   <div class="row">
     {% for members in queen.members %}
@@ -36,7 +36,7 @@
   </div>
 </div>
 
- <div class="container-fluid bg-secondary text-light">
+ <div class="container-fluid music-container text-dark">
     <h1> Music </h1>
     <div class="row">
       {% for discography in queen.discography %}

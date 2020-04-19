@@ -32,36 +32,45 @@
 .container {
   padding: 20px;
 }
+  
+body {
+  font-family: 'Open Sans';
+}
 
 h1 {
   text-align: center;
-  }
+  font-family: 'Playfair Display' !important;
+}
 
-.circular-portrait {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  margin-top: 10px;
-    
-    .members-img {
-      width: 100%;
-      height: auto;
-    }
-    
-      .text-centered {
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
+.members-container {
+  background-color: #181616;
+  
+  .circular-portrait {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+      
+      .members-img {
+        width: 100%;
+        height: auto;
       }
+      
+        .text-centered {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+  }
 }
 
 .overlay {
@@ -80,6 +89,9 @@ h1 {
   .circular-portrait:hover .overlay {
     opacity: 1;
   }
+
+.music-container {
+    border-top: 1px solid black;
 
   .music {
     position: relative;
@@ -116,6 +128,7 @@ h1 {
         text-align: center;
       }
   }
+}
 
   .card-img-overlay {
     position: absolute;

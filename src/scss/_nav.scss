@@ -6,10 +6,32 @@
 }
 
 .navbar {
-  .navbar-dark {
-    background: transparent !important;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+
+.navbar.solid {
+  background-color: black;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+
+.dropdown-menu {
+  background-color: black;
+  opacity: .8;
+  .dropdown-item {
+    color: white;
   }
-  .navbar-dark.scrolled {
-    background: black !important;
-  }
+}
+
+.dropdown-menu a:hover {
+  background-color: gray;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }

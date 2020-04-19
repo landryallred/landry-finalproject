@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body> 
   {% include "_partials/nav.njk" %}
 
   {% include "_partials/jumbotron.njk" %}
@@ -22,5 +22,20 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/scripts.js"></script>
+
+  <script> 
+$(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 350) { 
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
+        });
+});
+  </script>
+
 </body>
 </html>
