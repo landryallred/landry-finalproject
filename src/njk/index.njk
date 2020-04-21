@@ -12,7 +12,7 @@
       <p>Queen are a British rock band formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock. </p>
 
       <p>Before forming Queen, May and Taylor had played together in the band Smile. Mercury was a fan of Smile and encouraged them to experiment with more elaborate stage and recording techniques. He joined in 1970 and suggested the name "Queen". Deacon was recruited in March 1971, before the band released their eponymous debut album in 1973. Queen first charted in the UK with their second album, Queen II, in 1974. Sheer Heart Attack later that year and A Night at the Opera in 1975 brought them international success. The latter featured "Bohemian Rhapsody", which stayed at number one in the UK for nine weeks and helped popularise the music video format.</p>
-
+      
       <p><i>This description is sourced from <a href="https://en.wikipedia.org/wiki/Queen_(band)">Wikipedia</a>.</i></p>
     </div>
   </div>
@@ -21,28 +21,27 @@
 <div class="container-fluid members-container text-light">
 <h1> Members </h1>
   <div class="row">
-    {% for members in queen.members %}
+  {% for members in queen.members %}
     <div class="members col-sm-6 col-md-3" align="center">
-        <div class="circular-portrait">
+      <div class="circular-portrait">
         <img class="members-img img-fluid" src="img/members/{{ members.imagebw }}" alt="{{ members.name }}">
-            <div class="overlay">
-                <div class="text-centered"> <a href="{{ members.slug }}.html" {{ members.url }} class="text-light">
-                  {{ members.name }} </a>
-                </div>
-            </div>
+        <div class="overlay">
+          <div class="text-centered"> <a href="{{ members.slug }}.html" {{ members.url }} class="text-light"> {{ members.name }} </a>
+          </div>
         </div>
+      </div>
     </div>
   {% endfor %}
   </div>
 </div>
 
- <div class="container-fluid music-container text-dark">
-    <h1> Music </h1>
-    <div class="row">
-      {% for discography in queen.discography %}
-      <div class="music col-sm-6 col-md-3">
-        <div class="card-music text-center">
-          <img class="card-img img-fluid" src="img/discs/{{ discography.image }}" alt="{{ discography.title }}">
+<div class="container-fluid music-container text-dark">
+<h1> Music </h1>
+  <div class="row">
+  {% for discography in queen.discography %}
+    <div class="music col-sm-6 col-md-3">
+      <div class="card-music text-center">
+        <img class="card-img img-fluid" src="img/discs/{{ discography.image }}" alt="{{ discography.title }}">
         <div class="card-img-overlay">
           <div class="card-body text-light">
             <h5 class="card-title"> {{ discography.title }}</h5>
@@ -51,7 +50,7 @@
         </div>
       </div>
     </div>
-      {% endfor %}
+  {% endfor %}
   </div>
 </div>
 {% endblock %}

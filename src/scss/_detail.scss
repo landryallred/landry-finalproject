@@ -5,12 +5,11 @@
     border-radius: 20px;
   }
 }
-
+ 
 .col-bio {
   padding-top: 10px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  padding-left: 0px;
+  padding-bottom: 10px;
+
 }
 
 .col-narrative {
@@ -36,27 +35,38 @@ h1 {
   perspective: 1000px; 
   background-color: black;
   border-radius: 20px;
-  display: inline-flex;
+  display: inline-block;
+  position: relative;
+  .card-inner { 
+    transition: transform 0.6s; 
+    transform-style: preserve-3d; 
+    .card-front, .card-back { 
+      backface-visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card-body {
+        padding-top: 10px;
+      }
+    } 
+  } 
+} 
 
-} 
-.card-inner { 
-  position: relative; 
-  text-align: center; 
-  transition: transform 0.6s; 
-  transform-style: preserve-3d; 
-} 
 .card:hover .card-inner { 
   transform: rotateY(180deg); 
 } 
-.card-front, .card-back { 
-  position: absolute; 
-  backface-visibility: hidden;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} 
+
+.card-front {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  height: 500px;
+}
 
 .card-back { 
   transform: rotateY(180deg); 
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  height: 500px;
 } 
