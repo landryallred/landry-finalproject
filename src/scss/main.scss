@@ -28,10 +28,6 @@
 .container-fluid {
   padding: 20px;
 }
-
-.container {
-  padding: 20px;
-}
   
 body {
   font-family: 'Open Sans';
@@ -43,7 +39,7 @@ body {
 
 .members-container {
   background-color: #181616;
-  
+  text-align: center;
   .circular-portrait {
     position: relative;
     width: 200px;
@@ -52,12 +48,10 @@ body {
     border-radius: 50%;
     margin-bottom: 20px;
     margin-top: 10px;
-      
       .members-img {
         width: 100%;
         height: auto;
       }
-      
         .text-centered {
           color: white;
           font-size: 20px;
@@ -85,24 +79,22 @@ body {
   background-color: gray;
 }
 
-  .circular-portrait:hover .overlay {
-    opacity: 1;
-  }
+.circular-portrait:hover .overlay {
+  opacity: 1;
+}
 
 .music-container {
     border-top: 1px solid black;
-
+    text-align: center;
   .music {
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
     margin-top: 10px;
-      
       .card-img {
         width: 100%;
         height: auto;
       }
-
       .card-title {
         color: white;
         font-size: 20px;
@@ -114,7 +106,6 @@ body {
         transform: translate(-50%, -50%);
         text-align: center;
       }
-
       .card-text {
         color: white;
         font-size: 20px;
@@ -129,19 +120,19 @@ body {
   }
 }
 
-  .card-img-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: gray;
-  }
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: gray;
+}
   
-    .music:hover .card-img-overlay {
-      opacity: 1;
-    }
+.music:hover .card-img-overlay {
+  opacity: 1;
+}

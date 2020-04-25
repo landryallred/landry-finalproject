@@ -1,4 +1,11 @@
 .jumbotron {
   background: no-repeat;
-  padding: 0px;
+  padding-bottom: 5px;
+  padding-top: 0px;
+  .carousel {
+    height: 600px;
+  }
+  img {
+    max-height: 600px;
+  }
 }

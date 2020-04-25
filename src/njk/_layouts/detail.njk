@@ -1,61 +1,42 @@
 {% extends '_layouts/base.njk' %}
 
 {% block content %}
-<div class="container container-fluid">
+<div class="container-fluid container-detail">
 <h1>{{ members.name }}</h1>
-  <div class="row align-items-center"> 
-    <div class="col-sm-3 col-md-6">
-      <div class="members-photo text-center">
-        <img src="img/members/{{members.slug}}-color.jpg" alt="{{members.name}}" class="img-fluid rounded">
+  <div class="row justify-content-center"> 
+    <img src="img/members/{{members.slug}}-color.jpg" alt="{{members.name}}" class="img-fluid rounded">
+    <img src="img/members/{{members.slug}}-bw.jpg" alt="{{members.name}}" class="img-fluid rounded">
+  </div>
+  <div class="row justify-content-center">
+    <div class="card-deck text-light">
+      <div class="card">
+        <div class="card-body">
+          <h5>Instruments</h5>
+          <p class="card-text">{{ members.instruments }}</p>
+        </div> 
       </div>
-    </div>
-    <div class="col-bio col-sm-4 col-md-6 text-center mx-auto">
-      <div class="card-deck text-light">
-        <div class="card">
-          <div class="card-inner"> 
-            <div class="card-front w-100 vertical-text">
-              <h5 class="card-body">Instruments</h5>
-            </div> 
-            <div class="card-back">
-              <h5 class="card-body"> {{ members.instruments}} </h5>
-            </div> 
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner"> 
-            <div class="card-front w-100 vertical-text">
-              <h5 class="card-body">Tenure</h5>
-            </div>
-            <div class="card-back">
-              <h5 class="card-body"> {{ members.tenure }}</h5>
-            </div> 
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner"> 
-            <div class="card-front w-100 vertical-text">
-              <h5 class="card-body">Birthplace</h5>
-            </div> 
-            <div class="card-back">
-              <h5 class="card-body"> {{ members.birthplace}}</h5>
-            </div> 
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner"> 
-            <div class="card-front w-100 vertical-text">
-              <h5 class="card-body">Birthdate</h5>
-            </div> 
-            <div class="card-back">
-              <h5 class="card-body"> {{ members.birthdate}}</h5>
-            </div> 
-          </div>
+      <div class="card">
+        <div class="card-body">
+          <h5>Tenure</h5>
+          <p class="card-text">{{ members.tenure }}</p>
+        </div> 
+      </div>
+      <div class="card">
+        <div class="card-body"> 
+          <h5>Birthplace</h5>
+          <p class="card-text">{{ members.birthplace }}</p>
+        </div> 
+      </div>
+      <div class="card">
+        <div class="card-body"> 
+          <h5>Birthdate</h5>
+          <p class="card-text">{{ members.birthdate }}</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-narrative text-dark">
+  <div class="row justify-content-center">
+    <div class="col-narrative col-md-6 text-dark">
       <h2> About {{ members.name }} </h2>
       <article> {{ members.text | safe }} </article>
     </div>

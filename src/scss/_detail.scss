@@ -1,72 +1,25 @@
-.members-photo {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  img {
+.container-detail {
+  .row {
+    padding: 10px;
+    img {
     border-radius: 20px;
+    padding: 5px;
+    }
   }
 }
  
-.col-bio {
-  padding-top: 10px;
-  padding-bottom: 10px;
-
+.card { 
+  background-color: black;
+  border-radius: 20px;
+  .card-body {
+    padding-top: 10px;
+    text-align: center;
+  }
 }
 
 .col-narrative {
-  padding: 20px;
   background-color: transparent;
   border: 1px solid black;
   border-radius: 20px;
+  padding: 10px;
 }
-
-h1 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.vertical-text{
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-}
-
-.card { 
-  height: 500px;
-  width: 100px;
-  perspective: 1000px; 
-  background-color: black;
-  border-radius: 20px;
-  display: inline-block;
-  position: relative;
-  .card-inner { 
-    transition: transform 0.6s; 
-    transform-style: preserve-3d; 
-    .card-front, .card-back { 
-      backface-visibility: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .card-body {
-        padding-top: 10px;
-      }
-    } 
-  } 
-} 
-
-.card:hover .card-inner { 
-  transform: rotateY(180deg); 
-} 
-
-.card-front {
-  text-transform: uppercase;
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-  margin: auto;
-  height: 500px;
-}
-
-.card-back { 
-  transform: rotateY(180deg); 
-  top: 0; bottom: 0; left: 0; right: 0;
-  margin: auto;
-  height: 500px;
-} 
