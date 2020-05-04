@@ -1,17 +1,41 @@
 /* nav */
-
-.logo-image{
-  width: 100px;
-  overflow: hidden;
-}
-
 .navbar {
   height: 80px;
   background-color: transparent;
   border: none;
-  color: black;
   z-index: 100;
   transition: background-color 1s ease 0s;
+  .logo-image{
+    width: 100px;
+    overflow: hidden;
+  }
+  .dropdown-menu {
+    background-color: black;
+    opacity: .8;
+    .dropdown-item {
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    background-color: black;
+    height: 50px;
+    z-index: 100;
+    .logo-image {
+      width: 60px;
+      overflow: hidden;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    background-color: black;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
 }
 
 .navbar.solid {
@@ -20,11 +44,14 @@
   box-shadow: 0 0 4px grey;
 }
 
-.dropdown-menu {
-  background-color: black;
-  opacity: .8;
-  .dropdown-item {
-    color: white;
+@media (max-width: 480px) {
+  .navbar-nav {
+    background-color: black;
+    border-radius: 5px;
+    padding-left: 10px;
+    .dropdown-menu {
+      background-color: black;
+    }
   }
 }
 

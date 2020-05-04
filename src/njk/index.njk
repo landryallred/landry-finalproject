@@ -24,12 +24,11 @@
 <div class="text-muted d-none d-lg-block">*Hover for member detail pages.</div>
   <div class="row justify-content-center">
   {% for members in queen.members %}
-    <div class="members col">
-      <div class="circular-portrait">
-        <img class="members-img img-fluid" src="img/members/{{ members.imagebw }}" alt="{{ members.name }}">
-        <div class="overlay">
-          <div class="text-centered"> <a href="{{ members.slug }}.html" {{ members.url }} class="text-light"> {{ members.name }} </a>
-          </div>
+    <div class="card-members">
+      <img class="card-img img-fluid" src="img/members/{{ members.imagebw }}" alt="{{ members.name }}">
+      <div class="card-img-overlay">
+        <div class="card-body text-light">
+          <h5 class="card-title"> <a href="{{ members.slug }}.html" class="text-light"> {{ members.name }} </a> </h5>
         </div>
       </div>
     </div>

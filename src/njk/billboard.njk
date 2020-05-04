@@ -6,14 +6,13 @@
 
 {% block content %} 
 <div class="container billboard-container container-fluid">
-  <div class="row">
-    <div class="col">
-      <h1> Queen's Billboard Hits </h1>
-      <iframe title="" aria-label="Bar Chart" id="datawrapper-chart-PB7kW" src="//datawrapper.dwcdn.net/PB7kW/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="558">
-      </iframe>
-      <script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
-      </script>
-    </div>
+  <div class="row justify-content-center">
+    <h1> Queen's Billboard Hits </h1>
+    <p class="billboard-info text-muted"> *Number indicates # of weeks each single has appeared on the chart.</p>
+    <iframe title="" aria-label="Bar Chart" id="datawrapper-chart-PB7kW" src="//datawrapper.dwcdn.net/PB7kW/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="558">
+    </iframe>
+    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+    </script>
   </div>
 </div>
 {% endblock %}

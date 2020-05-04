@@ -39,7 +39,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="billboard.html" id="navbarMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Billboard</a>
-      </li>
+      </li> 
     </ul>
   </div> 
 </nav>
@@ -93,42 +93,38 @@
 <div class="text-muted d-none d-lg-block">*Hover for member detail pages.</div>
   <div class="row justify-content-center">
   
-    <div class="members col">
-      <div class="circular-portrait">
-        <img class="members-img img-fluid" src="img/members/freddie-mercury-bw.jpg" alt="Freddie Mercury">
-        <div class="overlay">
-          <div class="text-centered"> <a href="freddie-mercury.html"  class="text-light"> Freddie Mercury </a>
-          </div>
+    <div class="card-members">
+      <img class="card-img img-fluid" src="img/members/freddie-mercury-bw.jpg" alt="Freddie Mercury">
+      <div class="card-img-overlay">
+        <div class="card-body text-light">
+          <h5 class="card-title"> <a href="freddie-mercury.html" class="text-light"> Freddie Mercury </a> </h5>
         </div>
       </div>
     </div>
   
-    <div class="members col">
-      <div class="circular-portrait">
-        <img class="members-img img-fluid" src="img/members/brian-may-bw.jpg" alt="Brian May">
-        <div class="overlay">
-          <div class="text-centered"> <a href="brian-may.html"  class="text-light"> Brian May </a>
-          </div>
+    <div class="card-members">
+      <img class="card-img img-fluid" src="img/members/brian-may-bw.jpg" alt="Brian May">
+      <div class="card-img-overlay">
+        <div class="card-body text-light">
+          <h5 class="card-title"> <a href="brian-may.html" class="text-light"> Brian May </a> </h5>
         </div>
       </div>
     </div>
   
-    <div class="members col">
-      <div class="circular-portrait">
-        <img class="members-img img-fluid" src="img/members/roger-taylor-bw.jpg" alt="Roger Taylor">
-        <div class="overlay">
-          <div class="text-centered"> <a href="roger-taylor.html"  class="text-light"> Roger Taylor </a>
-          </div>
+    <div class="card-members">
+      <img class="card-img img-fluid" src="img/members/roger-taylor-bw.jpg" alt="Roger Taylor">
+      <div class="card-img-overlay">
+        <div class="card-body text-light">
+          <h5 class="card-title"> <a href="roger-taylor.html" class="text-light"> Roger Taylor </a> </h5>
         </div>
       </div>
     </div>
   
-    <div class="members col">
-      <div class="circular-portrait">
-        <img class="members-img img-fluid" src="img/members/john-deacon-bw.jpg" alt="John Deacon">
-        <div class="overlay">
-          <div class="text-centered"> <a href="john-deacon.html"  class="text-light"> John Deacon </a>
-          </div>
+    <div class="card-members">
+      <img class="card-img img-fluid" src="img/members/john-deacon-bw.jpg" alt="John Deacon">
+      <div class="card-img-overlay">
+        <div class="card-body text-light">
+          <h5 class="card-title"> <a href="john-deacon.html" class="text-light"> John Deacon </a> </h5>
         </div>
       </div>
     </div>
@@ -344,7 +340,7 @@ $(document).ready(function() {
         // Transition effect for navbar 
         $(window).scroll(function() {
           // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 350) { 
+          if($(this).scrollTop() > 360) { 
               $('.navbar').addClass('solid');
           } else {
               $('.navbar').removeClass('solid');
